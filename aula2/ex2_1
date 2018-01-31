@@ -1,0 +1,26 @@
+Exercício 2.1
+Para cada um dos termos de performance, pesquise na web exemplos que
+citam medições deste item.
+
+1) Tempo de resposta: quantidade de tempo para processar uma requisição.
+PING - Ferramenta simples para analise de rede
+http://player.slideplayer.com.br/41/11259615/   => slide 19
+
+2) Responsividade: velocidade com que uma requisição é reconhecida pelo
+sistema.
+
+
+3) Latência: tempo mínimo para fornecer qualquer tipo de resposta.
+Time to First byte - tempo necessário para chegar o primeiro byte de resposta
+https://moz.com/blog/improving-search-rank-by-optimizing-your-time-to-first-byte
+
+4) Throughput: quanto pode ser feito em um determinado período.
+Maximo de transações processadas x Usuários simultaneos
+https://andrepintoo.wordpress.com/throughput/
+
+5) Carga: stress aplicado a um sistema.
+http://www.appperfect.com/products/load-test.php#screenshots
+
+6) Sensibilidade à carga / degradação: como o tempo de resposta varia de
+acordo com a carga.
+https://app.loadimpact.com/load-test/d0c4749c-c1e5-4cb4-903f-1e20ce451a7d?charts=type%3D1%3Bsid%3D__li_bandwidth%3A1%3BdataKey%3Davg%3B%3Btype%3D1%3Bsid%3D__li_requests_per_second%3A1%3BdataKey%3Davg%3B%3Btype%3D1%3Bsid%3D__li_connections_active%3A1%3BdataKey%3Dvalue%3B%3Btype%3D8%3Bsid%3D__li_loadgen_cpu_utilization%3A1%3BdataKey%3Dvalue%3B%3Btype%3D8%3Bsid%3D__li_loadgen_memory_utilization%3A1%3BdataKey%3Dvalue%3B%3Btype%3D1%3Bsid%3D__li_user_load_time%3A1%3BdataKey%3Dvalue&large-charts=type%3D1%3Bsid%3D__li_clients_active%3A1%3BdataKey%3Dvalue%3B%3Btype%3D1%3Bsid%3D__li_user_load_time%3A1%3BdataKey%3Dvalue
