@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>50</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Ideia&gt;&gt;
+--
+-id: Long 
+-id: IdParticipante
+-string: Descricao
+-int[]: IdCategoria
+--
+#Cadastrar(ideia: Ideia): bool
+#EnviarEmail(ideia: Ideia, participante: Participante): bool
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>50</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Categoria&gt;&gt;
+--
+-id: Long
+-string: Nome
+--
+#Inserir(Categoria: categoria): int
+#Consultar(i: int): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>250</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Participante&gt;&gt;
+--
+-id: Long
+-string: Nome
+-bool: Organizador
+--
+#Inserir(participante: Participante): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>70</x><y>410</y><w>100</w><h>130</h></coordinates><panel_attributes>InovacaoSvc 
+--
+Adicionar
+Atualizar
+Consultar
+Deletar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>210</x><y>410</y><w>140</w><h>130</h></coordinates><panel_attributes>InterfaceInovacaoDB
+--
+Adicionar
+Atualizar
+Consultar
+Deletar</panel_attributes><additional_attributes></additional_attributes></element></diagram>
