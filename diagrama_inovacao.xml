@@ -1,41 +1,55 @@
 <diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>50</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Ideia&gt;&gt;
 --
--id: Long 
--id: IdParticipante
--string: Descricao
--int[]: IdCategoria
+-identificador: Long
+-IdParticipante: int
+-Descricao: string
+-IdCategoria: int[]
 --
 #Cadastrar(ideia: Ideia): bool
 #EnviarEmail(ideia: Ideia, participante: Participante): bool
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>50</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Categoria&gt;&gt;
 --
--id: Long
--string: Nome
+-identificador: Long
+-Nome: string
 --
 #Inserir(Categoria: categoria): int
 #Consultar(i: int): int
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>250</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Participante&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>280</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Email&gt;&gt;
 --
--id: Long
--string: Nome
--bool: Organizador
+-identificador: Long
+-Endereço: string
+-Mensagem: string
 --
 #Inserir(participante: Participante): int
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>170</x><y>380</y><w>100</w><h>130</h></coordinates><panel_attributes>InovacaoSvc 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>170</x><y>440</y><w>100</w><h>130</h></coordinates><panel_attributes>InovacaoSvc 
 --
 Adicionar
 Atualizar
 Consultar
-Deletar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>330</x><y>390</y><w>140</w><h>130</h></coordinates><panel_attributes>InterfaceInovacaoDB
+Deletar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>330</x><y>450</y><w>140</w><h>130</h></coordinates><panel_attributes>InterfaceInovacaoDB
 --
 Adicionar
 Atualizar
 Consultar
-Deletar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>160</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=0..n
-m1=1</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>110</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=1..n
-m1=1</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element></diagram>
+Deletar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>260</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Participante&gt;&gt;
+--
+-identificador: Long
+-Nome: string
+
+--
+#Inserir(participante: Participante): int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>160</y><w>220</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+participante
+m1=1
+m2=0..*</panel_attributes><additional_attributes>200;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>160</y><w>60</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+email
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>100</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+categorias
+m1=1..*
+m2=0..*</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>420</y><w>100</w><h>30</h></coordinates><panel_attributes>Organizador</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>380</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+organizador</panel_attributes><additional_attributes>120;60;10;10</additional_attributes></element></diagram>
