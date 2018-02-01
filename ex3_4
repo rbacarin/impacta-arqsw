@@ -1,0 +1,11 @@
+Pesquise frameworks (gratuitos e comerciais) que potencializam o uso de cada
+um dos estilos de arquitetura mencionados abaixo:
+Arquitetura baseada em componentes (component-based)
+- http://tapestry.apache.org/
+http://wicket.apache.org/
+
+Message Bus
+http://masstransit-project.com/
+
+Service-Oriented Architecture (SOA)
+http://searchmicroservices.techtarget.com/tip/Swordfish-Eclipses-OSGi-based-SOA-framework
